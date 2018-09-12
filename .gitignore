@@ -270,8 +270,12 @@ __pycache__/
 
 ######################
 # VS Generated Files #
+<<<<<<< HEAD
 ######################
 *.VC.db
 /Saved
 /Intermediate
 /Binaries/Win64
+=======
+*.VC.db
+>>>>>>> 9d77c61d51bf6b7c4b585cce0bb62ca76cd474d5
