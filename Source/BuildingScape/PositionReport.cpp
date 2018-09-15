@@ -2,7 +2,7 @@
 
 #include "PositionReport.h"
 #include "BuildingScape.h"
-#include "Runtime/Engine/Classes/GameFramework/Actor.h"
+#include "GameFramework/Actor.h"
 
 
 // Sets default values for this component's properties
@@ -22,8 +22,8 @@ void UPositionReport::BeginPlay()
 	Super::BeginPlay();
 
 	FString ObjectName = GetOwner()->GetName();
-
-	UE_LOG(LogTemp, Warning, TEXT("Position report Reporting for duty on %s"), *ObjectName);
+	FString ObjectPos = GetOwner()->GetTransform().GetLocation().ToString();
+	UE_LOG(LogTemp, Warning, TEXT("%s is at %s"), *ObjectName, *ObjectPos);
 	
 }
 
