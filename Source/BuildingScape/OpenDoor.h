@@ -28,12 +28,10 @@ public:
 
 private:
 	UPROPERTY(VisibleAnywhere)
-	float OpenAngle = 70.0f;
+	float OpenAngle = 100.0f;
 
 	UPROPERTY(EditAnywhere)
 	ATriggerVolume *PressurePlate;
 
-	UPROPERTY(EditAnywhere)
 	AActor *ActorThatOpens;
-
 };
