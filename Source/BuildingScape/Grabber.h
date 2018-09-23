@@ -1,10 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"
+#include "Runtime/Engine/Classes/Components/InputComponent.h"
 #include "Grabber.generated.h"
+
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -26,6 +26,8 @@ public:
 
 private:
 	float Reach = 100.f;
-	
 	UPhysicsHandleComponent *PhysicsHandle = nullptr;
+	UInputComponent *InputComponent = nullptr;
+
+	void Grab();
 };
